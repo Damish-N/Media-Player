@@ -16,7 +16,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#play" prefHeight="40.0" prefWidth="58.0" text="play" />
             <Button mnemonicParsing="false" onAction="#pauase" prefHeight="40.0" prefWidth="60.0" text="pause" />
-            <Slider fx:id="slider" onContextMenuRequested="#handle" onDragDetected="#handle" onDragDone="#handle" onDragDropped="#handle" onDragEntered="#handle" onMouseClicked="#handle" onMouseDragged="#handle" onMouseEntered="#handle" onMousePressed="#handle" onMouseReleased="#handle" prefHeight="14.0" prefWidth="149.0" />
+            <Slider fx:id="slider" onContextMenuRequested="#handle" onDragDetected="#handle" onDragDone="#handle" onDragDropped="#handle" onDragEntered="#handle" onMouseClicked="#handle" onMouseDragged="#handle" onMouseEntered="#handle" onMousePressed="#handle" onMouseReleased="#handle" prefHeight="14.0" prefWidth="152.0" />
             <Button fx:id="open" mnemonicParsing="false" onAction="#open" prefHeight="25.0" prefWidth="54.0" text="open" />
             <Button mnemonicParsing="false" onAction="#fast" prefHeight="25.0" prefWidth="45.0" text="fast" />
             <Button mnemonicParsing="false" onAction="#slow" prefHeight="25.0" prefWidth="55.0" text="slow" />
