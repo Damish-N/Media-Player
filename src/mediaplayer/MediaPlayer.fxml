@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaplayer.MediaPlayerController">
+   <center>
+      <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#play" prefHeight="40.0" prefWidth="58.0" text="play" />
+            <Button mnemonicParsing="false" onAction="#pauase" prefHeight="40.0" prefWidth="60.0" text="pause" />
+            <Slider fx:id="slider" onContextMenuRequested="#handle" onDragDetected="#handle" onDragDone="#handle" onDragDropped="#handle" onDragEntered="#handle" onMouseClicked="#handle" onMouseDragged="#handle" onMouseEntered="#handle" onMousePressed="#handle" onMouseReleased="#handle" prefHeight="14.0" prefWidth="149.0" />
+            <Button fx:id="open" mnemonicParsing="false" onAction="#open" prefHeight="25.0" prefWidth="54.0" text="open" />
+            <Button mnemonicParsing="false" onAction="#fast" prefHeight="25.0" prefWidth="45.0" text="fast" />
+            <Button mnemonicParsing="false" onAction="#slow" prefHeight="25.0" prefWidth="55.0" text="slow" />
+            <Button mnemonicParsing="false" onAction="#reload" prefHeight="25.0" prefWidth="65.0" text="reload" />
+            <Button mnemonicParsing="false" onAction="#start" prefHeight="25.0" prefWidth="55.0" text="start" />
+            <Button mnemonicParsing="false" onAction="#last" prefHeight="25.0" prefWidth="51.0" text="stop" />
+            <ProgressBar fx:id="pb" prefHeight="18.0" prefWidth="58.0" progress="0.0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
